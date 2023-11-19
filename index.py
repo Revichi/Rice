@@ -6,7 +6,7 @@ import webbrowser
 import pandas as pd
 import joblib
 # Memuat model SVM dari file .pkl
-svm_model_path = 'C:/Users/fahad/Downloads/Streamlit/Model/svm_model.pkl'
+svm_model_path = 'Model/svm_model.pkl'
 svm_model = joblib.load(svm_model_path)
 
 with st.sidebar:
@@ -16,7 +16,7 @@ with st.sidebar:
 
 if Tools==False and home==True:
    # Memuat file CSV
-    file_path = 'C:/Users/fahad/Downloads/Streamlit/Model/Rice.csv'
+    file_path = 'Model/Rice.csv'
     df = pd.read_csv(file_path)
 
     # Set judul halaman
