@@ -14,12 +14,12 @@ Rice (Cammeo and Osmancik)
 st.write("""
 Harap Isi Data Sesuai Kolom, Data Tidak Boleh Kosong
 """)
-Area = st.number_input("Area", step=0.01)  # Set step ke nilai pecahan
-Perimeter = st.number_input("Perimeter", step=0.01)
-MajorAxisLength = st.number_input("Major_Axis_Length", step=0.01)
-MinorAxisLength = st.number_input("Minor_Axis_Length", step=0.01)
-Eccentricity = st.number_input("Eccentricity", step=0.01)
-ConvexArea = st.number_input("Convex_Area", step=0.01)
+Area = st.number_input("Area", min_value=0.0, max_value=100.0, step=0.1, format="%f")  # Set step ke nilai pecahan
+Perimeter = st.number_input("Perimeter", min_value=0.0, max_value=100.0, step=0.1, format="%f")
+MajorAxisLength = st.number_input("Major_Axis_Length", min_value=0.0, max_value=100.0, step=0.1, format="%f")
+MinorAxisLength = st.number_input("Minor_Axis_Length", min_value=0.0, max_value=100.0, step=0.1, format="%f")
+Eccentricity = st.number_input("Eccentricity", min_value=0.0, max_value=100.0, step=0.1, format="%f")
+ConvexArea = st.number_input("Convex_Area", min_value=0.0, max_value=100.0, step=0.1, format="%f")
 
 columns = st.columns((2, 0.6, 2))
 submit = columns[1].button("Submit")
