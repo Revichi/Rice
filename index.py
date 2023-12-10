@@ -49,7 +49,6 @@ if home == False and Tools == False or home == False and Tools == True:
     MinorAxisLength = st.number_input("Minor_Axis_Length", step=0.01)
     Eccentricity = st.number_input("Eccentricity", step=0.01)
     ConvexArea = st.number_input("Convex_Area", step=0.01)
-    Extent = st.number_input("Extent", step=0.01)
 
     columns = st.columns((2, 0.6, 2))
     submit = columns[1].button("Submit")
@@ -58,7 +57,7 @@ if home == False and Tools == False or home == False and Tools == True:
   
     if submit:
         # Normalisasi data menggunakan fungsi normalisasi yang telah ditambahkan
-        normalized_data = aksi.normalisasi([Area, Perimeter, MajorAxisLength, MinorAxisLength, Eccentricity, ConvexArea, Extent])
+        normalized_data = aksi.normalisasi([Area, Perimeter, MajorAxisLength, MinorAxisLength, Eccentricity, ConvexArea])
 
         # Melakukan prediksi dengan model SVM
         prediction = svm_model.predict([normalized_data])
