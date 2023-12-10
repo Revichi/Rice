@@ -28,7 +28,7 @@ submit = columns[1].button("Submit")
   
 if submit:
     # Melakukan prediksi dengan model SVM
-    prediction = svm_model.predict([Area, Perimeter, MajorAxisLength, MinorAxisLength, Eccentricity, ConvexArea])
+    prediction = svm_model.predict(Area, Perimeter, MajorAxisLength, MinorAxisLength, Eccentricity, ConvexArea)
 
     # Menampilkan hasil prediksi
     st.header('Hasil Prediksi')
