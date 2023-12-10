@@ -14,12 +14,12 @@ Rice (Cammeo and Osmancik)
 st.write("""
 Harap Isi Data Sesuai Kolom, Data Tidak Boleh Kosong
 """)
-Area = st.number_input("Area", min_value=0.0, max_value=100.0, step=0.00001, format="%.5f")  # Set step ke nilai pecahan
-Perimeter = st.number_input("Perimeter", min_value=0.0, max_value=100.0, step=0.00001, format="%.5f")
-MajorAxisLength = st.number_input("Major_Axis_Length", min_value=0.0, max_value=100.0, step=0.00001, format="%.5f")
-MinorAxisLength = st.number_input("Minor_Axis_Length", min_value=0.0, max_value=100.0, step=0.00001, format="%.5f")
-Eccentricity = st.number_input("Eccentricity", min_value=0.0, max_value=100.0, step=0.00001, format="%.5f")
-ConvexArea = st.number_input("Convex_Area", min_value=0.0, max_value=100.0, step=0.00001, format="%.5f")
+Area = st.number_input("Area",format="%.5f")  # Set step ke nilai pecahan
+Perimeter = st.number_input("Perimeter",format="%.5f")
+MajorAxisLength = st.number_input("Major_Axis_Length",format="%.5f")
+MinorAxisLength = st.number_input("Minor_Axis_Length",format="%.5f")
+Eccentricity = st.number_input("Eccentricity",format="%.5f")
+ConvexArea = st.number_input("Convex_Area",format="%.5f")
 
 columns = st.columns((2, 0.6, 2))
 submit = columns[1].button("Submit")
