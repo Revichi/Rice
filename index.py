@@ -27,11 +27,8 @@ submit = columns[1].button("Submit")
 
   
 if submit:
-    # Normalisasi data menggunakan fungsi normalisasi yang telah ditambahkan
-    normalized_data = aksi.normalisasi([Area, Perimeter, MajorAxisLength, MinorAxisLength, Eccentricity, ConvexArea])
-
     # Melakukan prediksi dengan model SVM
-    prediction = svm_model.predict([normalized_data])
+    prediction = svm_model.predict([Area, Perimeter, MajorAxisLength, MinorAxisLength, Eccentricity, ConvexArea])
 
     # Menampilkan hasil prediksi
     st.header('Hasil Prediksi')
