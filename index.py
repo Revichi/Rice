@@ -8,7 +8,9 @@ import joblib
 # Memuat model SVM dari file .pkl
 svm_model_path = 'Model/svm_model.pkl'
 svm_model = joblib.load(svm_model_path)
-
+st.title("""
+Rice (Cammeo and Osmancik)
+""")
 st.write("""
 Harap Isi Data Sesuai Kolom, Data Tidak Boleh Kosong
 """)
